@@ -1,0 +1,87 @@
+---
+layout: base
+---
+<div class="site-wrap ffs-proposal ffs-cp">
+
+<div class="container ffs-breadcrumbs">
+   <div class="row">
+      <div class="col-xs-12">
+          <p><a href="/forum-funding-system/">Forum Funding System</a></p>
+          <p><a href="/forum-funding-system/completed-proposals/">Completed Tasks</a></p>
+        <p class="bread-active">{{page.title}}</p>
+      </div>
+   </div>
+</div>    
+            <section class="container full">
+                <div class="info-block">
+                   <div class="row">
+                        <div class="col-xs-12">
+                            <h2>{{page.title}}</h2>
+                                <p class="author-list"><span><img src="/img/author-filled.png"></span>by {{page.author}}</p>
+                                <p class="date-list"><span><img src="/img/calendar.png"></span>12/11/2017</p>
+                                <p class="progress-number-goal"><span><img src="/img/monero-amount.png"></span>100 XMR</p>
+                                <p class="bar-work-status">Completed</p> 
+                            <div class="progress-bar">
+                                <span class="work-progress" style="width: 100%; background-color: #70af71;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+                   
+        <section class="container full">
+                <div class="">
+                    <div class="row between-xs">
+                       <div class="col-xs-12">
+                            <div class="tabs">
+                                  <input class="input" name="tabs" type="radio" id="tab-1" checked="checked"/>
+                                  <label class="label" for="tab-1">Proposal</label>
+                                  <div class="panel col-xs-12">
+                                       <div class="panel-segment">
+                                           {{content}}
+                                       </div>
+                                  </div>
+                                  <input class="input" name="tabs" type="radio" id="tab-2"/>
+                                  <label class="label" for="tab-2">Milestones</label>
+                                  <div class="panel col-xs-12">
+                                    {% if page.milestones != nil %}
+                                        {% for milestones in page.milestones %}
+                                           <div class="milestone panel-segment">
+                                                <span class="{{milestones.status}} ms-{{milestones.status}}"></span>
+                                                <h3>{{milestones.name}}</h3>
+                                                <p><span class="bold">To be paid:</span> {{milestones.funds}}</p>
+                                                {% if milestones.done != nil %}
+                                                <p><span class="bold">Completion date:</span> {{milestones.done}}</p>
+                                           </div>
+                                            {%endif%}
+                                        {%endfor%}
+                                        {%else%}
+                                            <div class="panel-segment">
+                                                <p>No milestones</p>
+                                            </div>
+                                    {%endif%}
+                                  </div>
+                                  <input class="input" name="tabs" type="radio" id="tab-3"/>
+                                  <label class="label" for="tab-3">Payouts</label>
+                                  <div class="panel col-xs-12">
+                                    {% if page.payouts != nil %}
+                                        {% for payouts in page.payouts %}
+                                           <div class="panel-segment">
+                                                <span class="{{milestones.status}} ms-{{milestones.status}}"></span>
+                                                <p><span class="bold">Funds Awarded:</span> {{payouts.amount}}</p>
+                                                <p><span class="bold">Date:</span> {{payouts.date}}</p>
+                                            </div>
+                                        {%endfor%}
+                                        {%else%}
+                                            <div class="panel-segment">
+                                                <p>No Payouts</p>
+                                            </div>
+                                    {%endif%}
+                                  </div>
+                                </div>
+                       </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+    

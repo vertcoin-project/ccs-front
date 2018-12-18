@@ -1,0 +1,103 @@
+---
+layout: base
+---
+
+<div class="site-wrap ffs-proposal ffs-fr">
+
+<div class="container ffs-breadcrumbs">
+   <div class="row">
+      <div class="col-xs-12">
+          <p><a href="/forum-funding-system/">Forum Funding System</a></p>
+          <p><a href="/forum-funding-system/funding-required/">Funding Required</a></p>
+        <p class="bread-active">{{page.title}}</p>
+      </div>
+   </div>
+</div>
+      
+       <!-- FULL WIDTH BLOCK -->                   
+                   <!--div class="row center-xs">
+                       <div class="tab col-xs-12">
+                            <input id="tab-one" type="checkbox" name="tabs" class="accordion">
+                            <label for="tab-one" class="accordion">Contribute</label>
+                            <div class="tab-content">
+                                <div class="row start-xs">
+                                    <div class="col-xs-12">
+                                        <p>In order to contribute to the cause of <strong>{{page.title}}</strong> all you have to do is the following:</p>
+                                        <p>Have a valid Monero address. If you don't have one, you can read on getting started!</p>
+                                        <p>Send the amount of XMR that you wish to contribute to the address: <strong>{{page.address}}</strong></p>
+                                        <p>Make sure that you enter a payment ID of <strong>{{page.paymentid}}</strong> in order for us to be able to assign your contribution to this specific project!</p>
+					<p><div id="qrcode"></div></p>
+					<script src="{{ base.url | prepend: site.url }}/js/qrcode.min.js"></script>
+					<script type="text/javascript">
+						var qr_description = encodeURIComponent("{{page.title}}");
+						new QRCode(document.getElementById("qrcode"), {
+							text: "monero:{{page.address}}?tx_payment_id={{page.paymentid}}&tx_description="+qr_description,
+						        width: 150,
+							    height: 150,
+						        colorDark : "#000000",
+						        colorLight : "#ffffff",
+						        correctLevel : QRCode.CorrectLevel.M
+						});
+					</script>
+                                    </div>
+                                </div>
+                            </div--!>
+    <!-- END FULL WIDTH BLOCK -->
+    
+                <section class="container full">
+                <div class="info-block">
+                   <div class="row">
+                        <div class="col-xs-12"> 
+                            <h2>{{page.title}}</h2>
+                            <div class="row middle-xs between-xs">
+                                <p class="author-list"><span><img src="/img/author-filled.png"></span>{{page.author}}</p>
+                                <p class="date-list"><span><img src="/img/calendar.png"></span>{{page.date}}</p>
+                                <p class="bar-fund-status">Raised <span class="progress-number-funded">75</span> of <span class="progress-number-goal">100</span> XMR</p>
+                            </div>
+                            <div class="progress-bar">
+                                <span class="fund-progress" style="width: 75%"></span>
+                            </div>
+                           <p><a href="#" class="btn btn-primary">Contribute</a></p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+                   
+        <section class="container full">
+                <div class="">
+                    <div class="row between-xs">
+                       <div class="col-xs-12">
+                            <div class="tabs">
+                                  <input class="input" name="tabs" type="radio" id="tab-1" checked="checked"/>
+                                  <label class="label" for="tab-1">Proposal</label>
+                                  <div class="panel col-xs-12">
+                                       <div class="panel-segment">
+                                           {{content}}
+                                       </div>
+                                  </div>
+                                  <input class="input" name="tabs" type="radio" id="tab-2"/>
+                                  <label class="label" for="tab-2">Milestones</label>
+                                  <div class="panel col-xs-12">
+                                    {% if page.milestones != nil %}
+                                        {% for milestones in page.milestones %}
+                                           <div class="milestone panel-segment">
+                                                <span class="{{milestones.status}} ms-{{milestones.status}}"></span>
+                                                <h3>{{milestones.name}}</h3>
+                                                <p><span class="bold">To be paid:</span> {{milestones.funds}}</p>
+                                                {% if milestones.done != nil %}
+                                                <p><span class="bold">Completion date:</span> {{milestones.done}}</p>
+                                           </div>
+                                            {%endif%}
+                                        {%endfor%}
+                                        {%else%}
+                                            <div class="panel-segment">
+                                                <p>No milestones</p>
+                                            </div>
+                                    {%endif%}
+                                  </div>
+                                </div>
+                       </div>
+                    </div>
+                </div>
+        </section>
+    </div>

@@ -1,0 +1,42 @@
+---
+layout: customnt
+title: Funding Required
+---
+
+<div class="container ffs-breadcrumbs">
+   <div class="row">
+      <div class="col-xs-12">
+          <p><a href="/forum-funding-system/">Forum Funding System</a></p>
+          <p class="bread-active">{{page.title}}</p>
+      </div>
+   </div>
+</div>
+
+<section class="container fund-required">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>{{page.title}}</h1>
+        </div>
+            {% for toplevel in site.data.ffs %}
+                {% if toplevel.stage == "Funding Required" %}
+                    {% for proposal in toplevel.proposals%}
+                        <div class="col-xs-12">
+                            <a href="{{proposal.url}}" class="row middle-xs ffs-idea">
+                                <div class="col-xs-12">
+                                    <h3>{{proposal.name}}</h3>
+                                    <div class="row between-xs middle-xs">
+                                        <p class="author-list"><span><img src="/img/author-filled.png"></span>{{proposal.author}}</p>
+                                        <p class="date-list"><span><img src="/img/calendar.png"></span>11/24/2016</p>
+                                        <p class="bar-fund-status">Raised <span class="progress-number-funded">75</span> of <span class="progress-number-goal">100</span> XMR</p>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <span class="fund-progress" style="width: 75%"></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {%endfor%}
+                {%endif%}
+            {%endfor%}
+    </div>
+</section>
