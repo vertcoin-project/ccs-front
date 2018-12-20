@@ -1,0 +1,3 @@
+[submodule "forum-funding-system/proposals"]
+	path = forum-funding-system/proposals
+	url = https://repo.getmonero.org/monero-project/ffs-proposals.git
