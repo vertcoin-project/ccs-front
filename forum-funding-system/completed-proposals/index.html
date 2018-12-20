@@ -17,22 +17,20 @@ title: Completed Tasks
         <div class="col-xs-12">
             <h1>{{page.title}}</h1>
         </div>
-            {% for toplevel in site.data.ffs %}
-                {% if toplevel.stage == "Completed Proposals" %}
+            {% for toplevel in site.data.completed-proposals %}
                     {% for proposal in toplevel.proposals%}
                         <div class="col-xs-12">
-                            <a href="{{proposal.url}}" class="row middle-xs ffs-idea">
+                            <a href="{{proposal.local-url}}" class="row middle-xs ffs-idea">
                                 <div class="col-xs-12">
                                     <h3>{{proposal.name}}</h3>
                                     <div class="row">
                                         <p class="author-list"><span><img src="/img/author-filled.png"></span>{{proposal.author}}</p>
-                                        <p class="date-list"><span><img src="/img/calendar.png"></span>11/24/2016</p>
+                                        <p class="date-list"><span><img src="/img/calendar.png"></span>{{proposal.date}}</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     {%endfor%}
-                {%endif%}
             {%endfor%}
     </div>
 </section>

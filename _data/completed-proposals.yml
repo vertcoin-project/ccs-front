@@ -1,44 +1,58 @@
 - stage: Completed Proposals
   proposals:
     - name: Documentation and cleanup of source code 
-      url: /forum-funding-system/proposals/documentation-cleanup.html
+      local-url: /forum-funding-system/proposals/documentation-cleanup.html
       author: tewinget
+      date:
     - name: What is Monero? is produced and open-sourced
-      url: /forum-funding-system/proposals/whatismonero-produced.html
+      local-url: /forum-funding-system/proposals/whatismonero-produced.html
       author: savandra
+      date:
     - name: Improving Developer Guides to include Simplewallet examples and Bitmonerod methods and examples
-      url: /forum-funding-system/proposals/improve-devguides-simplewallet.html
+      local-url: /forum-funding-system/proposals/improve-devguides-simplewallet.html
       author: bigredmachine
+      date:
     - name: A continuation for all purpose programming of what needs to get done in monero
-      url: /forum-funding-system/proposals/mooo-continuation-programming.html
+      local-url: /forum-funding-system/proposals/mooo-continuation-programming.html
       author: moneromooo
+      date:
     - name: Create End-User Kovri documentation
-      url: /forum-funding-system/proposals/kovri-end-user-docs.html
+      local-url: /forum-funding-system/proposals/kovri-end-user-docs.html
       author: anonimal
+      date:
     - name: fluffypony's Conference Circuit Jan 2017 Edition
-      url: /forum-funding-system/proposals/fp-conference-2017.html
+      local-url: /forum-funding-system/proposals/fp-conference-2017.html
       author: fluffypony
+      date:
     - name: The official Qt GUI Project
-      url: /forum-funding-system/proposals/official-qt-gui.html
+      local-url: /forum-funding-system/proposals/official-qt-gui.html
       author: othe
+      date:
     - name: Justin's Local Meetup Talks Proposal 1
-      url: /forum-funding-system/proposals/justin-local-meetups-1.html
+      local-url: /forum-funding-system/proposals/justin-local-meetups-1.html
       author: samsunggalaxyplayer
+      date:
     - name: Justin's Local Meetup Talks Proposal 2
-      url: /forum-funding-system/proposals/justin-local-meetups-2.html
+      local-url: /forum-funding-system/proposals/justin-local-meetups-2.html
       author: samsunggalaxyplayer
+      date:
     - name: More mooo coding goodness
-      url: /forum-funding-system/proposals/more-mooo-coding-goodness.html
+      local-url: /forum-funding-system/proposals/more-mooo-coding-goodness.html
       author: moneromooo
+      date:
     - name: Funding for a Monero subforum on the largest chinese BTC forum 8BTC
-      url: /forum-funding-system/proposals/monero-subforum-8btc.html
+      local-url: /forum-funding-system/proposals/monero-subforum-8btc.html
       author: firperfect
+      date:
     - name: Additional GUI Developer
-      url: /forum-funding-system/proposals/additional-gui-dev.html
+      local-url: /forum-funding-system/proposals/additional-gui-dev.html
       author: Jaquee
+      date:
     - name: Release of new/updated pool software
-      url: /forum-funding-system/proposals/release-pool-software.html
+      local-url: /forum-funding-system/proposals/release-pool-software.html
       author: Snipa22
+      date:
     - name: Monero integrations with web apps
-      url: /forum-funding-system/proposals/monero-integrations.html
+      local-url: /forum-funding-system/proposals/monero-integrations.html
       author: serhack
+      date:

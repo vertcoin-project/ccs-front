@@ -16,14 +16,22 @@ layout: base
                 <div class="info-block">
                    <div class="row">
                         <div class="col-xs-12">
+                           {% for toplevel in site.data.completed-proposals %}
+                             {% if toplevel.stage == "Completed Proposals" %}
+                                {% for proposal in toplevel.proposals%}
+                                  {% if proposal.name == {{page.title}} %}
                             <h2>{{page.title}}</h2>
-                                <p class="author-list"><span><img src="/img/author-filled.png"></span>by {{page.author}}</p>
-                                <p class="date-list"><span><img src="/img/calendar.png"></span>12/11/2017</p>
-                                <p class="progress-number-goal"><span><img src="/img/monero-amount.png"></span>100 XMR</p>
+                                <p class="author-list"><span><img src="/img/author-filled.png"></span>by {{proposal.author}}</p>
+                                <p class="date-list"><span><img src="/img/calendar.png"></span>{{proposal.date}}</p>
+                                <p class="progress-number-goal"><span><img src="/img/monero-amount.png"></span>{{proposal.amount}} XMR</p>
                                 <p class="bar-work-status">Completed</p> 
                             <div class="progress-bar">
                                 <span class="work-progress" style="width: 100%; background-color: #70af71;"></span>
                             </div>
+                            {%endif%}
+                            {%endfor%}
+                            {%endif%}
+                            {%endfor%}
                         </div>
                     </div>
                 </div>
