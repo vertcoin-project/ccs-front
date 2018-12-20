@@ -21,16 +21,16 @@ title: Work in Progress
                 {% if toplevel.stage == "Work in Progress" %}
                     {% for proposal in toplevel.proposals%}
                         <div class="col-xs-12">
-                            <a href="{{proposal.url}}" class="row middle-xs ffs-idea">
+                            <a href="{{proposal.local-url}}" class="row middle-xs ffs-idea">
                                 <div class="col-xs-12">
                                     <h3>{{proposal.name}}</h3>
                                     <div class="row between-xs middle-xs">
-                                        <p class="author-list"><span><img src="/img/author-filled.png"></span>samsunggalaxyplayer</p>
-                                        <p class="date-list"><span><img src="/img/calendar.png"></span>11/24/2016</p>
-                                        <p class="bar-work-status">Completed <span class="progress-number-funded">1</span> of <span class="progress-number-goal">3</span> milestones</p>
+                                        <p class="author-list"><span><img src="/img/author-filled.png"></span>{{proposal.author}}</p>
+                                        <p class="date-list"><span><img src="/img/calendar.png"></span>{{proposal.date}}</p>
+                                        <p class="bar-work-status">Completed <span class="progress-number-funded">{{proposal.milestones-completed}}</span> of <span class="progress-number-goal">{{proposal.milestones}}</span> milestones</p>
                                     </div>
                                     <div class="progress-bar">
-                                        <span class="work-progress" style="width: 30%"></span>
+                                        <span class="work-progress" style="width: {{proposal.milestones-percentage}}%"></span>
                                     </div>
                                 </div>
                             </a>

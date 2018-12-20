@@ -18,14 +18,22 @@ layout: base
                 <div class="info-block">
                    <div class="row">
                         <div class="col-xs-12">
+                           {% for toplevel in site.data.ffs %}
+                             {% if toplevel.stage == "Work in Progress" %}
+                                {% for proposal in toplevel.proposals%}
+                                  {% if proposal.name == {{page.title}} %}
                             <h2>{{page.title}}</h2>
                             <p class="author-list"><span><img src="/img/author-filled.png"></span>{{page.author}}</p>
                             <p class="date-list"><span><img src="/img/calendar.png"></span>{{page.date}}</p>
-                            <p class="progress-number-goal"><span><img src="/img/monero-amount.png"></span>100 XMR</p>
-                            <p class="bar-work-status">Completed <span class="progress-number-funded">1</span> of <span class="progress-number-goal">3</span> milestones</p>
+                            <p class="progress-number-goal"><span><img src="/img/monero-amount.png"></span>{{proposal.amount}} XMR</p>
+                            <p class="bar-work-status">Completed <span class="progress-number-funded">{{proposal.milestones-completed}}</span> of <span class="progress-number-goal">{{proposal.milestones}}</span> milestones</p>
                             <div class="progress-bar">
-                                <span class="work-progress" style="width: 30%"></span>
+                                <span class="work-progress" style="width: {{proposal.milestones-percentage}}%"></span>
                             </div>
+                            {%endif%}
+                            {%endfor%}
+                            {%endif%}
+                            {%endfor%}
                         </div>
                     </div>
                 </div>

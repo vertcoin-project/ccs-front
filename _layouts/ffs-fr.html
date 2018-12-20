@@ -48,16 +48,24 @@ layout: base
                 <div class="info-block">
                    <div class="row">
                         <div class="col-xs-12"> 
+                           {% for toplevel in site.data.ffs %}
+                             {% if toplevel.stage == "Funding Required" %}
+                                {% for proposal in toplevel.proposals%}
+                                  {% if proposal.name == {{page.title}} %}
                             <h2>{{page.title}}</h2>
                             <div class="row middle-xs between-xs">
-                                <p class="author-list"><span><img src="/img/author-filled.png"></span>{{page.author}}</p>
-                                <p class="date-list"><span><img src="/img/calendar.png"></span>{{page.date}}</p>
-                                <p class="bar-fund-status">Raised <span class="progress-number-funded">75</span> of <span class="progress-number-goal">100</span> XMR</p>
+                                <p class="author-list"><span><img src="/img/author-filled.png"></span>{{proposal.author}}</p>
+                                <p class="date-list"><span><img src="/img/calendar.png"></span>{{proposal.date}}</p>
+                                <p class="bar-fund-status">Raised <span class="progress-number-funded">{{proposal.amount-funded}}</span> of <span class="progress-number-goal">{{proposal.amount}}</span> XMR</p>
                             </div>
                             <div class="progress-bar">
-                                <span class="fund-progress" style="width: 75%"></span>
+                                <span class="fund-progress" style="width: {{proposal-percentage}}%"></span>
                             </div>
-                           <p><a href="#" class="btn btn-primary">Contribute</a></p>
+                           <p><a href="{{proposal.donate-url}}" class="btn btn-primary">Contribute</a></p>
+                           {%endif%}
+                            {%endfor%}
+                            {%endif%}
+                            {%endfor%}
                         </div>
                     </div>
                 </div>
