@@ -1,0 +1,47 @@
+[
+   {
+      "stage": "Ideas",
+      "proposals": [
+         {
+            "name": "Fake. Nothing here yet. Check WiP and Completed Proposals.",
+            "gitlab-url": null,
+            "author": "rehrar",
+            "date": "this date"
+         }
+      ]
+   },
+   {
+      "stage": "Funding Required",
+      "proposals": [
+         {
+            "name": "Monero Bounty For HackerOne",
+            "gitlab-url": null,
+            "local-url": "/forum-funding-system/proposals/monero-bounty-hackerone.html",
+            "author": "anonimal",
+            "amount": 1500,
+            "amount-funded": 1447.21,
+            "percentage": 96,
+            "date": "March 15, 2017",
+            "donate-url": null
+         }
+      ]
+   },
+   {
+      "stage": "Work in Progress",
+      "proposals": [
+         {
+            "name": "Getmonero.org Redesign",
+            "gitlab-url": null,
+            "local-url": "/forum-funding-system/proposals/getmonero-redesign.html",
+            "author": "rehrar",
+            "date": "February 24, 2017",
+            "milestones": 4,
+            "milestones-completed": 4,
+            "milestones-percentage": 100,
+            "amount": 100,
+            "amount-funded": 100,
+            "percentage": 100
+         }
+      ]
+   }
+]
