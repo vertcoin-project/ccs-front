@@ -59,7 +59,7 @@ layout: base
                                 <p class="bar-fund-status">Raised <span class="progress-number-funded">{{proposal.amount-funded}}</span> of <span class="progress-number-goal">{{proposal.amount}}</span> XMR</p>
                             </div>
                             <div class="progress-bar">
-                                <span class="fund-progress" style="width: {{proposal-percentage}}%"></span>
+                                <span class="fund-progress" style="width: {{proposal.percentage}}%"></span>
                             </div>
                            <p><a href="{{proposal.donate-url}}" class="btn btn-primary">Contribute</a></p>
                            {%endif%}
