@@ -1,36 +1,35 @@
 ---
 layout: customnt
-title: Funding Required
+title: Ideas
 ---
 
 <div class="container ffs-breadcrumbs">
    <div class="row">
       <div class="col-xs-12">
-          <p><a href="/forum-funding-system/">Forum Funding System</a></p>
+          <p><a href="/">Community Crowdfunding System</a></p>
           <p class="bread-active">{{page.title}}</p>
+          <p class="submit-idea">
+              <a href="#" target="_blank">Submit Idea</a>
+          </p>
       </div>
    </div>
 </div>
 
-<section class="container fund-required">
+<section class="container ideas"> 
     <div class="row">
         <div class="col-xs-12">
             <h1>{{page.title}}</h1>
         </div>
             {% for toplevel in site.data.ffs %}
-                {% if toplevel.stage == "Funding Required" %}
+                {% if toplevel.stage == "Ideas" %}
                     {% for proposal in toplevel.proposals%}
                         <div class="col-xs-12">
-                            <a href="{{proposal.local-url}}" class="row middle-xs ffs-idea">
+                            <a href="{{proposal.gitlab-url}}" class="row middle-xs ffs-idea">
                                 <div class="col-xs-12">
                                     <h3>{{proposal.name}}</h3>
-                                    <div class="row between-xs middle-xs">
+                                    <div class="row">
                                         <p class="author-list"><span><img src="/img/author-filled.png"></span>{{proposal.author}}</p>
                                         <p class="date-list"><span><img src="/img/calendar.png"></span>{{proposal.date}}</p>
-                                        <p class="bar-fund-status">Raised <span class="progress-number-funded">{{proposal.amount-funded}}</span> of <span class="progress-number-goal">{{proposal.amount}}</span> XMR</p>
-                                    </div>
-                                    <div class="progress-bar">
-                                        <span class="fund-progress" style="width: {{proposal.percentage}}%"></span>
                                     </div>
                                 </div>
                             </a>
@@ -40,3 +39,6 @@ title: Funding Required
             {%endfor%}
     </div>
 </section>
+
+
+                                        

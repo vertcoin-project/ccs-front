@@ -1,18 +1,18 @@
 ---
 layout: customnt
-title: Forum Funding System
+title: Community Crowdfunding System (CCS)
 ---
 <div class="ffs-main">
         <div class="container description" >
                <h1>{{page.title}}</h1>
         </div>
         <div class="container description" >
-               <p>Monero is a decentralized community-driven project, and the Forum Funding System is a way for members to get involved and proposals to be funded. To see how it works, <a href="">click here</a>. To see how to submit your own proposal or idea, <a href="">click here</a>.</p>
+               <p>Monero is a decentralized community-driven project, and the CCS is a way for members to get involved and proposals to be funded. To see how it works, <a href="">click here</a>. To see how to submit your own proposal or idea, <a href="">click here</a>.</p>
         </div>
         <section class="container">
             <div class="row">
                <div class="half col-sm-6 col-xs-12">
-                    <a href="{{site.baseurl}}/forum-funding-system/ideas/" class="ffs-cat row">
+                    <a href="{{site.baseurl}}/ideas/" class="ffs-cat row">
                      <div class="col-sm-4 col-xs-4">
                          <img src="/img/idea-bulb.png"/>
                      </div>
@@ -23,18 +23,18 @@ title: Forum Funding System
                      </a>
                </div>
                <div class="half col-sm-6 col-xs-12">
-                  <a href="{{site.baseurl}}/forum-funding-system/funding-required/" class="row ffs-cat">
+                  <a href="{{site.baseurl}}/funding-required/" class="row ffs-cat">
                      <div class="col-sm-4 col-xs-4">
                          <img src="/img/funding-required.png"/>
                      </div>
                      <div class="col-sm-8 col-xs-8">
                          <h2>Funding Required</h2>
-                         <p>Once a pitched and approved idea has been picked up by a developer or team it goes here for community fund-raising.</p>
+                         <p>Once a pitched and approved idea has been picked up by a developer or team it goes here for community fundraising.</p>
                      </div>
                    </a>
                </div>
                <div class="half col-sm-6 col-xs-12">
-                  <a href="{{site.baseurl}}/forum-funding-system/work-in-progress/" class="row ffs-cat">
+                  <a href="{{site.baseurl}}/work-in-progress/" class="row ffs-cat">
                     <div class="col-sm-4 col-xs-4">
                          <img src="/img/inprogress.png"/>
                      </div>
@@ -45,7 +45,7 @@ title: Forum Funding System
                    </a>
                </div>
                <div class="half col-sm-6 col-xs-12">
-                    <a href="{{site.baseurl}}/forum-funding-system/completed-proposals/" class="ffs-cat row">
+                    <a href="{{site.baseurl}}/completed-proposals/" class="ffs-cat row">
                         <div class="col-sm-4 col-xs-4">
                              <img src="/img/checklist.png"/>
                          </div>
