@@ -1748,6 +1748,19 @@ img.monero-logo {
     vertical-align: middle;
 }
 
+p.site-name {
+    padding: 0;
+}
+
+p.site-name a {
+    font-family: 'Hind', sans-serif;
+    color: #000;
+    display: inline-block;
+    text-decoration: none;
+    padding: 1.4rem 0 1.1rem 0;
+    font-size: 1.2rem;
+}
+
 .desktop-nav .items a {
     color: #4c4c4c;
     text-decoration: none;
@@ -1820,6 +1833,14 @@ img.monero-logo {
     position: inherit;
     width: 10rem;
     padding: 0.39rem 0 0.39rem 1rem;
+}
+    
+p.site-name {
+    padding-left: 1rem;
+}
+
+p.site-name a {
+    padding: 0.8rem 0 0.6rem 0;
 }
 
 .white-nav {
@@ -1943,20 +1964,16 @@ img.monero-logo {
 
 .slide-in-nav {
     position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    display: flex;
-    right: -100%;
-    left: 200%;
+    top: -100%;
+    left: 0;
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
-    top: 0;
-    bottom: 0;
-    width: 50vw;
+    width: 100vw;
     background-color: #fff;
-    -moz-transition: left 0.5s, right 0.5s;
-    -webkit-transition: left 0.5s, right 0.5s;
-    transition: left 0.5s, right 0.5s;
+    -moz-transition: top 0.5s, right 0.5s;
+    -webkit-transition: top 0.5s, right 0.5s;
+    transition: top 0.5s, right 0.5s;
     overflow: scroll;
     z-index: 90;
 }
@@ -1987,8 +2004,8 @@ label[for="mobile-burger"] {
     -moz-box-shadow: 0 0 900px 900px rgba(0,0,0,0.5);
     -webkit-box-shadow: 0 0 900px 900px rgba(0,0,0,0.5);
     box-shadow: 0 0 900px 900px rgba(0,0,0,0.5);
-    right: 0;
-    left: 50%;
+    top: 0;
+    height: 100%;
 }
 
 #mobile-burger:checked ~ body {
@@ -2186,6 +2203,26 @@ img.monero-logo {
 #mobile-burger:checked ~ .slide-in-nav {
     width: 100vw;
     left: 0;
+}
+
+}
+
+@media only screen and (max-width: 27rem) {
+
+p.site-name a {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+}
+
+}
+
+@media only screen and (max-width: 21.25rem) {
+    
+p.site-name a {
+    font-size: 0.9rem;
+    padding-top: 1.1rem;
+    padding-bottom: 0.8rem;
 }
 
 }
