@@ -59,7 +59,7 @@ layout: base
                                 <p class="bar-fund-status">Raised <span class="progress-number-funded">{{proposal.amount-funded}}</span> of <span class="progress-number-goal">{{proposal.amount}}</span> XMR</p>
                             </div>
                             <div class="progress-bar">
-                                <span class="fund-progress" style="width: {{proposal-percentage}}%"></span>
+                                <span class="fund-progress" style="width: {{proposal.percentage}}%"></span>
                             </div>
                            <p><a href="{{proposal.donate-url}}" class="btn btn-primary">Contribute</a></p>
                            {%endif%}
@@ -72,40 +72,34 @@ layout: base
         </section>
                    
         <section class="container full">
-                <div class="">
-                    <div class="row between-xs">
+                    <div class="row">
                        <div class="col-xs-12">
-                            <div class="tabs">
+                           <div class="tabs con-how">
                                   <input class="input" name="tabs" type="radio" id="tab-1" checked="checked"/>
-                                  <label class="label" for="tab-1">Proposal</label>
+                                  <label class="label" for="tab-1">QR Code</label>
                                   <div class="panel col-xs-12">
                                        <div class="panel-segment">
-                                           {{content}}
+                                            <h3>Contribute with a QR code</h3>
+                                            <p>1. Choose the amount of XMR you wish to contribute to this proposal</p>
+                                            <p>2. Scan this QR code or tap to open in your Monero wallet app:</p>
+                                            <p>
+                                                <a href="monero:45ttEikQEZWN1m7VxaVN9rjQkpSdmpGZ82GwUps66neQ1PqbQMno4wMY8F5jiDt2GoHzCtMwa7PDPJUJYb1GYrMP4CwAwNp" class="qr"><img src="/img/qrcode.png"/></a>
+                                            </p>
+                                            <p>3. Send! Thank you! You are amazing!</p>
                                        </div>
                                   </div>
                                   <input class="input" name="tabs" type="radio" id="tab-2"/>
-                                  <label class="label" for="tab-2">Milestones</label>
+                                  <label class="label" for="tab-2">Address</label>
                                   <div class="panel col-xs-12">
-                                    {% if page.milestones != nil %}
-                                        {% for milestones in page.milestones %}
-                                           <div class="milestone panel-segment">
-                                                <span class="{{milestones.status}} ms-{{milestones.status}}"></span>
-                                                <h3>{{milestones.name}}</h3>
-                                                <p><span class="bold">To be paid:</span> {{milestones.funds}}</p>
-                                                {% if milestones.done != nil %}
-                                                <p><span class="bold">Completion date:</span> {{milestones.done}}</p>
-                                           </div>
-                                            {%endif%}
-                                        {%endfor%}
-                                        {%else%}
-                                            <div class="panel-segment">
-                                                <p>No milestones</p>
-                                            </div>
-                                    {%endif%}
+                                      <div class="panel-segment">
+                                            <h3>Contribute using an address</h3>
+                                            <p>1. Choose the amount of XMR you wish to contribute to this proposal</p>
+                                            <p>2. Enter the following XMR address:</p>   <p class="string">45ttEikQEZWN1m7VxaVN9rjQkpSdmpGZ82GwUps66neQ1PqbQMno4wMY8F5jiDt2GoHzCtMwa7PDPJUJYb1GYrMP4CwAwNp</p>
+                                            <p>3. Send! Thank you! You are amazing!</p>
+                                      </div>
                                   </div>
-                                </div>
+                              </div>
                        </div>
                     </div>
-                </div>
         </section>
     </div>
