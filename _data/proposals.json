@@ -16,7 +16,7 @@
          {
             "name": "Monero Bounty For HackerOne",
             "gitlab-url": null,
-            "local-url": "/forum-funding-system/proposals/monero-bounty-hackerone.html",
+            "local-url": "/proposals/monero-bounty-hackerone.html",
             "author": "anonimal",
             "amount": 1500,
             "amount-funded": 1447.21,
@@ -32,7 +32,7 @@
          {
             "name": "Getmonero.org Redesign",
             "gitlab-url": null,
-            "local-url": "/forum-funding-system/proposals/getmonero-redesign.html",
+            "local-url": "/proposals/getmonero-redesign.html",
             "author": "rehrar",
             "date": "February 24, 2017",
             "milestones": 4,
