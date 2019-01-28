@@ -59,7 +59,7 @@
            <nav class="container">
               <div class="row middle-xs">
                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <a href="/"><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                    <p class="site-name"><a href="/">Community Crowdfunding System</a></p>
                   </div>
                   <div class="col-lg-8 col-md-8 col-sm-8 items end-xs">
                       <div class="row end-xs middle-xs">
@@ -68,7 +68,7 @@
                           <a href="/funding-required/">Funding Required</a>
                           <a href="/work-in-progress/">Work in Progress</a>
                           <a href="/completed-proposals/">Completed Tasks</a>
-                          <a href="/completed-proposals/">Getmonero.org</a>
+                          <a href="https://getmonero.org">Getmonero.org</a>
                           </div>
                       </div>
                   </div>
@@ -77,15 +77,19 @@
         </div>
         <div class="mob bot-nav white-nav">
             <div class="row middle-xs">
-                <div class="col-xs-6">
-                    <a href="
+                <div class="col-xs-12">
+                    <p class="site-name"><a href="{% if site.lang == 'en' %}
                     
-                    /
+                    {{ site.baseurl_root }}/
                     
-                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                    {% else %}
+                    
+                    {{ site.baseurl_root }}/{{site.lang}}
+                    
+                    {% endif %}">Community Crowdfunding System</a></p>
                 </div>
             </div>     
-        </div>    
+        </div>     
 
         <div class="site-wrap ffs-proposal ffs-con">
 
