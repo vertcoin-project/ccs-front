@@ -2648,6 +2648,32 @@ h1 {
     vertical-align: baseline;
 }
 
+.ffs p.author-list:before, .ffs p.date-list:before, .ffs-proposal p.author-list:before, .ffs-proposal p.date-list:before, .ffs-proposal p.progress-number-goal:before, .ffs-proposal p.date-list.contributor:before {
+    content: '';
+    display: inline-block;
+    height: 0.8rem;
+    width: 0.8rem;
+    margin-right: 0.3rem;
+    vertical-align: baseline;
+    background-size: cover;
+}
+
+.ffs p.author-list:before, .ffs-proposal p.author-list:before {
+    background-image: url(/img/author-filled.png);
+}
+
+.ffs p.date-list:before, .ffs-proposal p.date-list:before {
+    background-image: url(/img/calendar.png);
+}
+
+.ffs p.progress-number-goal:before, .ffs-proposal p.progress-number-goal:before {
+    background-image: url(/img/monero-amount.png);
+}
+
+.ffs p.date-list.contributor:before, .ffs-proposal p.date-list.contributor:before {
+    background-image: url(/img/contributors.png);
+}
+
 .ffs p.author-list, .ffs p.date-list, .ffs-proposal p.author-list, .ffs-proposal p.date-list {
     padding-top: 0;
     font-size: 1.1rem;
@@ -2655,6 +2681,10 @@ h1 {
     line-height: 0;
     display: inline;
     vertical-align: middle;
+}
+
+.ffs-proposal p.date-list, .ffs-proposal p.progress-number-goal, .ffs p.date-list {
+    margin-left: 2rem;
 }
 
 p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
@@ -2665,9 +2695,11 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 }
 
 .ideas p.author-list, .ideas p.date-list, .complete-proposal p.author-list, .complete-proposal p.date-list {
-    -ms-flex-preferred-size: 30%;
-    flex-basis: 30%;
-    max-width: 30%;
+    display: inline;
+}
+
+.ideas p.date-list, .complete-proposal p.date-list {
+    margin-left: 2rem;
 }
 
 .ffs p.list-button {
@@ -2704,9 +2736,6 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 }
 
 .ideas p.author-list, .ideas p.date-list, .complete-proposal p.author-list, .complete-proposal p.date-list {
-    -ms-flex-preferred-size: 40%;
-    flex-basis: 40%;
-    max-width: 40%;
     font-size: 1rem;
 }
 
@@ -2725,11 +2754,7 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 }
 
 .ideas p.author-list, .ideas p.date-list, .complete-proposal p.author-list, .complete-proposal p.date-list {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-    font-size: 0.9rem;
-    padding-top: 0.3rem;
+    padding-top: 0.7rem;
 }
 
 }
@@ -2750,14 +2775,16 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     margin-top: 0.5rem;
 }
 
+.ideas p.author-list, .ideas p.date-list, .complete-proposal p.author-list, .complete-proposal p.date-list, .ffs p.author-list, .ffs p.date-list {
+    display: block;
+    margin-left: 0;
+}
+
 }
 
 @media only screen and (max-width: 28rem) {
 
 .ideas p.author-list, .ideas p.date-list, .complete-proposal p.author-list, .complete-proposal p.date-list {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
     padding-top: 0.7rem;
 }
 
@@ -2778,18 +2805,6 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     margin-top: 1.5rem;
 }
 
-.fund-required p.author-list, .fund-required p.date-list, .ffs-fr p.author-list, .ffs-fr p.date-list, .ffs-con p.author-list, .ffs-con p.date-list {
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%;
-}
-
-.fund-required p.bar-fund-status, .ffs-fr p.bar-fund-status, .ffs-con p.bar-fund-status, .ffs-con p.bar-fund-status, .ffs-con p.bar-fund-status {
-    -ms-flex-preferred-size: 40%;
-    flex-basis: 40%;
-    max-width: 40%;
-}
-
 .fund-required p.author {
     padding-top: 0.5rem;
 }
@@ -2799,11 +2814,12 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     text-align: right;
+    float: right;
     font-size: 1.1rem;
 }
 
 .fund-required .progress-bar {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
 
@@ -2814,16 +2830,10 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 @media only screen and (max-width: 62rem) {
 
 .fund-required p.author-list, .fund-required p.date-list, .ffs-fr p.author-list, .ffs-fr p.date-list, .ffs-con p.author-list, .ffs-con p.date-list {
-    -ms-flex-preferred-size: 29%;
-    flex-basis: 29%;
-    max-width: 29%;
     font-size: 1rem;
 }
 
 .fund-required p.bar-fund-status, .ffs-fr p.bar-fund-status, .ffs-con p.bar-fund-status {
-    -ms-flex-preferred-size: 40%;
-    flex-basis: 40%;
-    max-width: 40%;
     font-size: 1rem;
 }
 
@@ -2831,28 +2841,7 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 
 @media only screen and (max-width: 48rem) {
 
-.fund-required p.author-list, .ffs-fr p.author-list, .ffs-con p.author-list, .ffs-con p.date-list {
-    -ms-flex-preferred-size: 40%;
-    flex-basis: 40%;
-    max-width: 40%;
-    font-size: 0.9rem;
-    padding-top: 0;
-}
-
 .fund-required p.date-list, .ffs-fr p.date-list {
-    -ms-flex-preferred-size: 20%;
-    flex-basis: 20%;
-    max-width: 20%;
-    font-size: 0.9rem;
-    padding-top: 0;
-}
-
-.fund-required p.bar-fund-status, .ffs-fr p.bar-fund-status, .ffs-con p.bar-fund-status {
-    -ms-flex-preferred-size: 40%;
-    flex-basis: 40%;
-    max-width: 40%;
-    text-align: right;
-    font-size: 0.9rem;
     padding-top: 0;
 }
 
@@ -2869,16 +2858,13 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 
 .fund-required p.author-list, .fund-required p.date-list, .ffs-fr p.author-list, .ffs-fr p.date-list, .ffs-con p.author-list, .ffs-con p.date-list {
     padding-top: 0.3rem;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
 }
 
 .fund-required p.bar-fund-status, .ffs-fr p.bar-fund-status, .ffs-con p.bar-fund-status {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
     text-align: left;
+    float: none;
+    font-size: 0.9rem;
+    padding-top: 0;
     margin-top: 1rem;
 }
 
@@ -2887,9 +2873,6 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 @media only screen and (max-width: 30rem) {
 
 .fund-required p.author-list, .fund-required p.date-list, .ffs-fr p.author-list, .ffs-fr p.date-list, .ffs-con p.author-list, .ffs-con p.date-list {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
     padding-top: 0.7rem;
 }
 }
@@ -2946,9 +2929,9 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     background-color: #ce5e14;
     color: #ffffff;
     border: none !important;
-    -moz-box-shadow: 0 0 30px rgba(50, 50, 93, .2), 0 3px 30px rgba(0, 0, 0, .2);
-    -webkit-box-shadow: 0 0 30px rgba(50, 50, 93, .2), 0 3px 30px rgba(0, 0, 0, .2);
-    box-shadow: 0 0 30px rgba(50, 50, 93, .2), 0 3px 30px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 0 30px rgba(50, 50, 93, .2), 0 3px 22px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 0 30px rgba(50, 50, 93, .2), 0 3px 22px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 30px rgba(50, 50, 93, .2), 0 3px 22px rgba(0, 0, 0, .2);
 }
 
 .tabs {
@@ -3026,6 +3009,7 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
   -webkit-box-shadow: 0 2px 4px rgba(50,50,93,.1);
   box-shadow: 0 2px 4px rgba(50,50,93,.1);
   margin-top: 0;
+  word-wrap: break-word;
 }
 
 .panel-segment:last-child {
@@ -3063,6 +3047,12 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     padding-top: 1rem;
 }
 
+.panel-segment .gldiscuss {
+    padding-top: 2.5rem;
+    margin-top: 3rem;
+    border-top: 1.5px solid #d0d4dd;
+}
+
 .milestone.panel-segment {
     position: relative;
     padding: 0 4rem 4rem 4rem;
@@ -3079,7 +3069,7 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 .milestone.panel-segment:after {
     content: '';
     width: 100%;
-    display: block;
+    display: none;
     border-bottom: 1.5px solid #d0d4dd;
     padding-top: 4rem;
 }
@@ -3119,6 +3109,11 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     margin-top: 2rem;
 }
 
+.panel-segment .gldiscuss {
+    padding-top: 2rem;
+    margin-top: 2.5rem;
+}
+
 .panel-segment p, .panel-segment ul li, .panel-segment ol li {
     padding-top: 0.5rem;
 }
@@ -3153,6 +3148,11 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     font-size: 1.3rem;
     margin-top: 1.5rem;
 } 
+
+.panel-segment .gldiscuss {
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+}
     
 }
 
@@ -3241,7 +3241,7 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 }
 
 .in-progress .progress-bar {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
 
@@ -3251,31 +3251,13 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     font-family: 'Open Sans', sans-serif;
 }
 
-.in-progress p.author-list, .in-progress p.date-list {
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%;
-}
-
-.in-progress p.bar-work-status {
-    -ms-flex-preferred-size: 40%;
-    flex-basis: 40%;
-    max-width: 40%;
-}
-
 @media only screen and (max-width: 62rem) {
 
 .in-progress p.author-list, .in-progress p.date-list {
-    -ms-flex-preferred-size: 29%;
-    flex-basis: 29%;
-    max-width: 29%;
     font-size: 1rem;
 }
 
 .in-progress p.bar-work-status {
-    -ms-flex-preferred-size: 40%;
-    flex-basis: 40%;
-    max-width: 40%;
     font-size: 1rem;
 }
 
@@ -3299,15 +3281,6 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     padding-top: 0;
 }
 
-.in-progress p.bar-work-status, .ffs-cp p.bar-work-status {
-    -ms-flex-preferred-size: 45%;
-    flex-basis: 45%;
-    max-width: 45%;
-    text-align: right;
-    font-size: 0.9rem;
-    padding-top: 0;
-}
-
 }
 
 @media only screen and (max-width: 41rem) {
@@ -3321,16 +3294,13 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 
 .in-progress p.author-list, .in-progress p.date-list {
     padding-top: 0.3rem;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
 }
 
-.in-progress p.bar-work-status {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
+.in-progress p.bar-work-status, .ffs-cp p.bar-work-status {
     text-align: left;
+    float: none;
+    font-size: 0.9rem;
+    padding-top: 0;
     margin-top: 1rem;
 }
 
@@ -3339,24 +3309,17 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 @media only screen and (max-width: 30rem) {
 
 .in-progress p.author-list, .in-progress p.date-list {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
     padding-top: 0.7rem;
 }
 }
 
 /* FFS WORK IN PROGRESS SINGLE */
 
-.ffs-wip p.author-list, .ffs-cp p.author-list, .ffs-wip p.date-list, .ffs-wip p.progress-number-goal, .ffs-cp p.date-list, .ffs-cp p.progress-number-goal, .ffs-wip p.bar-work-status, .ffs-cp p.bar-work-status {
+.ffs-proposal p.author-list, .ffs-proposal p.date-list, .ffs-proposal p.progress-number-goal, .ffs-proposal p.bar-work-status {
     display: inline;
 }
 
-.ffs-wip p.date-list, .ffs-wip p.progress-number-goal, .ffs-cp p.date-list, .ffs-cp p.progress-number-goal {
-    margin-left: 2rem;
-}
-
-.ffs-wip p.bar-work-status, .ffs-cp p.bar-work-status {
+.ffs-proposal p.bar-work-status, .ffs-proposal p.bar-fund-status {
     text-align: right;
     float: right;
 }
@@ -3368,22 +3331,22 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 
 @media only screen and (max-width: 62rem) {
 
-.ffs-wip p.author-list, .ffs-cp p.author-list, .ffs-wip p.date-list, .ffs-wip p.progress-number-goal, .ffs-cp p.date-list, .ffs-cp p.progress-number-goal, .ffs-wip p.bar-work-status, .ffs-cp p.bar-work-status {
+.ffs-proposal p.author-list, .ffs-proposal p.date-list, .ffs-proposal p.progress-number-goal, .ffs-proposal p.bar-work-status {
     font-size: 1rem;
+}
+
+.ffs-proposal p.bar-work-status, .ffs-proposal p.bar-work-status, .ffs-proposal p.bar-fund-status {
+    text-align: left;
+    float: none;
+    display: block;
+    margin-top: 1rem;
 }
    
 }
 
 @media only screen and (max-width: 48rem) {
 
-.ffs-wip p.bar-work-status, .ffs-cp p.bar-work-status {
-    text-align: left;
-    float: none;
-    display: block;
-    margin-top: 1rem;
-}
-
-.ffs-wip p.author-list, .ffs-cp p.author-list, .ffs-wip p.date-list, .ffs-wip p.progress-number-goal, .ffs-cp p.date-list, .ffs-cp p.progress-number-goal, .ffs-wip p.bar-work-status, .ffs-cp p.bar-work-status {
+.ffs-proposal p.author-list, .ffs-proposal p.date-list, .ffs-proposal p.progress-number-goal, .ffs-proposal p.bar-work-status {
     font-size: 0.9rem;
 }
 
@@ -3394,23 +3357,25 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 }
 
 @media only screen and (max-width: 37rem) {
-    
-.ffs-wip p.author-list, .ffs-cp p.author-list, .ffs-wip p.date-list, .ffs-wip p.progress-number-goal, .ffs-cp p.date-list, .ffs-cp p.progress-number-goal {
+
+.ffs-proposal p.author-list, .ffs-proposal p.date-list, .ffs-proposal p.progress-number-goal, .ffs-proposal p.bar-work-status {
     padding-top: 0.7rem;
 }
 
 .ffs-wip .progress-bar, .ffs-cp .progress-bar {
     margin-top: 0.5rem;
 }
+
+.ffs-proposal p.author-list, .ffs-proposal p.date-list, .ffs-proposal p.progress-number-goal, .ffs-proposal p.bar-work-status {
+    display: block;
+    margin-left: 0;
+}
     
 }
 
 @media only screen and (max-width: 30rem) {
 
-.ffs-wip p.author-list, .ffs-cp p.author-list, .ffs-wip p.date-list, .ffs-wip p.progress-number-goal, .ffs-cp p.date-list, .ffs-cp p.progress-number-goal {
-    display: block;
-    margin-left: 0;
-}
+
 
 }
 
@@ -3581,13 +3546,13 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 
 @media only screen and (max-width: 62rem) {
 
-}
-
-@media only screen and (max-width: 48rem) {
-
 .progress-bar {
     margin-top: 0.2rem;
 }
+
+}
+
+@media only screen and (max-width: 48rem) {
 
 }
 

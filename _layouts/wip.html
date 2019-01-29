@@ -23,17 +23,15 @@ layout: base
                                 {% for proposal in toplevel.proposals%}
                                   {% if proposal.name == {{page.title}} %}
                             <h2>{{page.title}}</h2>
-                            <p class="author-list"><span><img src="/img/author-filled.png"></span>{{page.author}}</p>
-                            <p class="date-list"><span><img src="/img/calendar.png"></span>{{page.date}}</p>
-                            <p class="progress-number-goal"><span><img src="/img/monero-amount.png"></span>{{proposal.amount}} XMR</p>
+                            <p class="author-list">{{page.author}}</p>
+                            <p class="date-list">{{page.date}}</p>
+                            <p class="progress-number-goal">{{proposal.amount}} XMR</p>
+                            <p class="date-list contributor">{{proposal.contributors}} contributors</p>
                             <p class="bar-work-status">Completed <span class="progress-number-funded">{{proposal.milestones-completed}}</span> of <span class="progress-number-goal">{{proposal.milestones}}</span> milestones</p>
                             <div class="progress-bar">
                                 <span class="work-progress" style="width: {{proposal.milestones-percentage}}%"></span>
                             </div>
-                            {%endif%}
-                            {%endfor%}
-                            {%endif%}
-                            {%endfor%}
+                            
                         </div>
                     </div>
                 </div>
@@ -49,6 +47,13 @@ layout: base
                                   <div class="panel col-xs-12">
                                        <div class="panel-segment">
                                            {{content}}
+                                           <div class="gldiscuss">
+                                               <h3>Community Discussion and Updates</h3>
+                                               <p><a href="{{proposal.gitlab-url}}">View community discussion, comments, and proposal updates on GitLab</a></p>
+                                           </div>{%endif%}
+                            {%endfor%}
+                            {%endif%}
+                            {%endfor%}
                                        </div>
                                   </div>
                                   <input class="input" name="tabs" type="radio" id="tab-2"/>
@@ -60,10 +65,8 @@ layout: base
                                                 <span class="{{milestones.status}} ms-{{milestones.status}}"></span>
                                                 <h3>{{milestones.name}}</h3>
                                                 <p><span>To be paid:</span> {{milestones.funds}}</p>
-                                                {% if milestones.done != nil %}
                                                 <p><span>Completion date:</span> {{milestones.done}}</p>
                                            </div>
-                                            {%endif%}
                                         {%endfor%}
                                         {%else%}
                                             <div class="panel-segment">
