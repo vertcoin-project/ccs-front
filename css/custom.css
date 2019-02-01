@@ -989,12 +989,11 @@ body p, body blockquote, body ul {
 }
 
 a {
-    color: #ff7519;
+    color: #000;
     text-decoration: none;
 }
 
 a:hover, a:focus, a:active {
-    text-decoration: underline;
     outline: 0;
 }
 
@@ -1461,6 +1460,10 @@ p {
 h1#main-h1 {
     font-size: 3rem;
 }
+    
+h2 {
+    font-size: 1.4rem; 
+    }
 
 h1 {
     font-size: 1.8rem;
@@ -3012,14 +3015,37 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
   word-wrap: break-word;
 }
 
+.panel-segment a {
+    border-bottom: 2px dotted #a1aabb;
+    display: inline;
+    line-height: 1.7;
+}
+
+.panel-segment a:hover, .panel-segment a:focus, .panel-segment a:active {
+    border-bottom: 2px solid #a1aabb;
+}
+
+
 .panel-segment:last-child {
     margin-bottom: 1rem;
+}
+
+.panel-segment h1 {
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+    line-height: 1.2;
+    font-size: 2rem;
+}
+
+.panel-segment h2 {
+    margin-top: 2.5rem;
+    text-align: left;
 }
 
 .panel-segment h3 {
     padding-top: 0;
     font-size: 1.5rem;
-    margin-top: 2.5rem;
+    margin-top: 1.7rem;
     font-family: 'Hind', sans-serif;
     font-weight: bold;
 }
@@ -3028,7 +3054,7 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     margin-top: 0;
 }
 
-.panel-segment p {
+.panel-segment p, .panel-segment ul li, .panel-segment ol li {
     padding-top: 1rem;
     font-size: 1.1rem;
     line-height: 1.7;
@@ -3039,12 +3065,6 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
-}
-
-.panel-segment ul li, .panel-segment ol li {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    padding-top: 1rem;
 }
 
 .panel-segment .gldiscuss {
@@ -3103,10 +3123,18 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 .milestone.panel-segment:first-of-type, .milestone.panel-segment:after {
     padding-top: 3rem;
 }
+    
+.panel-segment h2 {
+    margin-top: 2.3rem;
+}
 
 .panel-segment h3 {
     font-size: 1.3rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+}
+    
+.panel-segment h1 {
+    margin-bottom: 2rem;
 }
 
 .panel-segment .gldiscuss {
@@ -3140,14 +3168,23 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     padding-top: 2rem;
 }
 
-.panel-segment p {
+.panel-segment p, .panel-segment ul li, .panel-segment ol li {
     font-size: 1rem;
+}
+    
+.panel-segment h2 {
+    margin-top: 2rem;
 }
 
 .panel-segment h3 {
     font-size: 1.3rem;
     margin-top: 1.5rem;
 } 
+    
+.panel-segment h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.7rem;
+}
 
 .panel-segment .gldiscuss {
     padding-top: 1.5rem;
@@ -3164,6 +3201,10 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
   .panel-segment:first-of-type, .milestone.panel-segment:first-of-type {
       
   }
+    
+.panel-segment h1 {
+    font-size: 1.5rem;
+}
   
   .input:checked + .label {
       padding-bottom: 0;
