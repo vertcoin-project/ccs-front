@@ -16,6 +16,7 @@ The CCS utilizes git, and Monero's Gitlab instance for proposal tracking. A quic
 2. Make a new branch, named similarly to your proposal
 3. Add a new `.md` document, and title it similarly to the title of your proposal with your name or handle in the file name.
 4. Use the template provided below for the front matter, and place it at the top of your proposal. You are responsible for adding the appropriate amount of milestones, with an equal number of payouts below the milestones. FORMATTING MUST BE PRESERVED, OR THE PROPOSAL WILL NOT WORK! Do NOT fill in the `done:` variable under `milestones:`, and do NOT fill in anything under `payouts:` besides making sure the number matches the number of milestones.
+
 ```
 ---
 layout: fr
@@ -39,6 +40,7 @@ payouts:
     amount:
 ---
 ```
+
 5. Underneath the front matter, write the rest of your proposal. Be sure to include what the proposal is about, who will be completing it, why it is important for the community, the milestones and projected timeline, and an expiration date for your proposal.
 6. Save, commit, and make a Merge Request to the repo. Your MR title must be descriptive and relevant to your proposal.
 7. You're done. Go start letting people know about your proposal.
@@ -67,6 +69,7 @@ From here, you're going to click on the + button near the top center of your scr
 ### 4. Front matter
 
 Before you begin writing your proposal, however, you must copy the following template and paste it onto the top of your file:
+
 ```
 ---
 layout: fr
@@ -104,6 +107,7 @@ Fill this template out as follows:
 `amount:` Put the amount of Monero you are requesting for complete this.
 
 `milestones:` Do not put anything after Milestones directly, but rather the fields that follow it. Copy and paste from one dash (`-`) to the other, depending on how many milestones your proposal will take. So if you have four milestones, you should see put the following:
+
 ```
 milestones:
   - name:
@@ -123,6 +127,7 @@ milestones:
     done:
     status: unfinished
 ```
+
 EXACT FORMATTING MUST BE PRESERVED WITH THE SPACING. Otherwise the proposal will not work. It's the way Jekyll (on which this is built) functions. The dashes must be two spaces from the left margin.
 
 Fill in the `name:` field with the name of the Milestone (for example: Complete Video 1), and the `funds:` field with the amount of Monero you expect to receive for completing the milestones. Do not touch the `done:` or `status:` fields. Repeat until all the `name:` and `funds:` fields are filled in. If this confuses you, please scroll to the end of the page for an example of all of this correctly filled out.
