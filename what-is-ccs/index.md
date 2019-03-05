@@ -18,7 +18,7 @@ The CCS is a way for the community to propose ideas, request money, and utilize 
 The standard CCS workflow is as follows:
 
 1. An individual or team (henceforth 'proposer') has an idea to improve the Monero ecosystem that requires funds.
-2. The proposer types up a CCS proposal, understanding the rules and expectation presented in the following section, and makes a Merge Request (MR) to the CCS Proposals repository on Monero's Gitlab instance. All steps to submit this Merge Request can be found [here](/how-to-css/).
+2. The proposer types up a CCS proposal, understanding the rules and expectation presented in the following section, and makes a Merge Request (MR) to the CCS Proposals repository on Monero's Gitlab instance. All steps to submit this Merge Request can be found [here](/how-to-ccs/).
 3. The community discusses the pros and cons of the proposal, and offers feedback and critique.
 4. The proposer changes the proposal (if necessary) utilizing the feedback and critique of the community.
 5. Repeat steps 3 and 4 as needed.
@@ -49,4 +49,4 @@ The CCS is intentionally left as informal as possible. This allows for flexibili
 
 ### How to submit a proposal
 
-[Please read this page for step-by-step instructions on how to submit a proposal.](/how-to-css/)
+[Please read this page for step-by-step instructions on how to submit a proposal.](/how-to-ccs/)

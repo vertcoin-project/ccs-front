@@ -7,7 +7,7 @@ title: Community Crowdfunding System (CCS)
                <h1>{{page.title}}</h1>
         </div>
         <div class="container description" >
-               <p>Monero is a decentralized community-driven project, and the CCS is a way for members to get involved and proposals to be funded. To learn more about what it is and what the rules are, <a href="/what-is-ccs/">click here</a>. To see how to submit your own proposal or idea, <a href="/how-to-css/">click here</a>.</p>
+               <p>Monero is a decentralized community-driven project, and the CCS is a way for members to get involved and proposals to be funded. To learn more about what it is and what the rules are, <a href="/what-is-ccs/">click here</a>. To see how to submit your own proposal or idea, <a href="/how-to-ccs/">click here</a>.</p>
         </div>
         <section class="container">
             <div class="row">
