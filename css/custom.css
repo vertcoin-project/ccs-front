@@ -1743,6 +1743,54 @@ a.btn-link:hover span.icon-blockchain, a.btn-link:focus span.icon-blockchain, a.
     margin-bottom: 4rem;
 }
 
+.desktop-nav .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.desktop-nav .dropdown-content {
+    position: absolute;
+    left: 0;
+    top: 4.3rem;
+    text-align: left;
+    background: #ffffff;
+    width: 150%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-shadow: 0 2px 4px rgba(50,50,93,.1);
+    -webkit-box-shadow: 0 2px 4px rgba(50,50,93,.1);
+    box-shadow: 0 2px 4px rgba(50,50,93,.1);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+}
+
+.desktop-nav .dropdown:hover>.dropdown-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-content a {
+    display: block;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 3px solid #393939;
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  margin-left: 0.5rem;
+}
+
 img.monero-logo {
     max-width: 100%;
     height: auto;
@@ -1764,24 +1812,40 @@ p.site-name a {
     font-size: 1.2rem;
 }
 
-.desktop-nav .items a {
+.desktop-nav .items a, .desktop-nav .dropdown {
     color: #4c4c4c;
     text-decoration: none;
     -webkit-transition: all ease-out .1s;
     -moz-transition: all ease-out .1s;
     -o-transition: all ease-out .1s;
     transition: all ease-out .1s;
-    font-size: 0.9rem;
-    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    padding: 1.5rem;
+    cursor: pointer;
 }
 
-.desktop-nav .items a:last-of-type {
-    margin-right: -1rem;
+.desktop-nav .dropdown label {
+    cursor: pointer;
 }
 
 .desktop-nav .items a:hover, .topnav .topnav-list a:focus, .topnav .topnav-list a:active {
     color: #a1aabb;
     text-decoration: none;
+}
+
+.desktop-nav a.donate-btn {
+    background-color: #d26e2b;
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 1.5rem;
+}
+
+.desktop-nav a.donate-btn:hover, .desktop-nav a.donate-btn:focus, .desktop-nav a.donate-btn:active {
+    background-color: #ce5e14;
+    color: #ffffff;
 }
 
 .white-nav {
@@ -1797,15 +1861,19 @@ p.site-name a {
 
 @media only screen and (max-width: 75rem) {
 
-.desktop-nav .items a {
-    font-size: 0.85rem;
-    padding: 0.8rem 0.5rem;
+.desktop-nav .items a, .desktop-nav .dropdown {
+    font-size: 1rem;
+    padding: 1rem 1.3rem;
 }
 
-.desktop-nav .items a:last-of-type {
-    margin-right: -0.5rem;
-}
+.desktop-nav a.donate-btn {
+    margin-left: 1.3rem;
+}    
 
+.desktop-nav .dropdown-content {
+    top: 3.9rem;
+}
+    
 img.monero-logo {
     width: 10rem;
 }
@@ -1972,7 +2040,7 @@ p.site-name a {
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
-    width: 100vw;
+    width: 100%;
     background-color: #fff;
     -moz-transition: top 0.5s, right 0.5s;
     -webkit-transition: top 0.5s, right 0.5s;
@@ -2245,7 +2313,7 @@ body {
 
 footer {
     width: 100%;
-    background-color: #4c4c4c;
+    background-color: #474c56;
     color: #efefef;
     z-index: 1;
 }
@@ -2253,21 +2321,20 @@ footer {
 footer a.white {
     color: #efefef;
     text-decoration: none;
-    -webkit-transition: all ease-out .2s;
-    -moz-transition: all ease-out .2s;
-    -o-transition: all ease-out .2s;
-    transition: all ease-out .2s;
     font-size: 0.9375rem;
+    border-bottom: none;
+}
+
+footer a.white.gf {
+    border-bottom: 2px dotted #efefef;
 }
 
 footer a.white:hover, a.white:focus {
-    color: #ff7519;
-    text-decoration: underline;
+    border-bottom: 2px dotted #efefef;
 }
 
 .footer-wrapper {
     padding: 4rem 1rem;
-    padding-bottom: 0.5rem;
 }
 
 .footer-wrapper ul {
@@ -2275,11 +2342,41 @@ footer a.white:hover, a.white:focus {
 }
 
 .footer-links {
-    margin-bottom: 3rem;
+    background-color: #31353c;
+    width: 100%;
 }
 
 .footer-link {
-    padding: 0 1rem;
+    margin: 0 1rem;
+}
+
+.footer-wrapper .gf-address {
+    background-color: #dadbdd;
+    color: #4c4c4c;
+    font-weight: bold;
+    word-wrap: break-word;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    -moz-box-shadow: 0 0 10px rgba(28,30,34,.6);
+    -webkit-box-shadow: 0 0 10px rgba(28,30,34,.6);
+    box-shadow: 0 0 10px rgba(28,30,34,.6);
+    border-radius: 2px;
+}
+
+.footer-wrapper .qr {
+    display: none;
+    border: none;
+    border-radius: 10px;
+    -moz-box-shadow: 0 0 30px rgba(28,30,34,.6);
+    -webkit-box-shadow: 0 0 30px rgba(28,30,34,.6);
+    box-shadow: 0 0 30px rgba(28,30,34,.6);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    background-color: #ffffff;
+}
+
+.footer-wrapper .qr img {
+    vertical-align: middle;
 }
 
 @media only screen and (max-width: 75rem) {
@@ -2295,7 +2392,6 @@ footer a.white:hover, a.white:focus {
 
 footer {
     width: 100%;
-    background-color: #4c4c4c;
     color: #efefef;
     z-index: 1;
 }
@@ -2313,26 +2409,37 @@ footer {
     position: initial;
     width: 100%;
     height: auto;
-    background-color: #4c4c4c;
     color: #efefef;
     z-index: 1;
 }
 
 .footer-wrapper {
-    padding: 2.5rem;
+    padding: 2.5rem 1rem;
 }
 
 .footer-wrapper div.col-xs-6 {
     margin-bottom: 1.5rem;
     padding-right: 1rem;
 }
+    
+footer a.white {
+    font-size: 0.8rem;
+}
 
+}
+
+@media only screen and (max-width: 37rem) {
+    
+.footer-wrapper .qr {
+    display: inline-block;
+}    
+    
 }
 
 @media only screen and (max-width: 30rem) {
 
 .footer-wrapper {
-    padding: 2rem 2rem 0 2rem;
+    padding: 2rem;
 }
 
 .footer-wrapper div.col-xs-6 {
@@ -2340,6 +2447,10 @@ footer {
     max-width: 100%;
     flex-basis: 100%;
     padding-right: 0;
+}
+    
+.list-inline>li {
+    display: inline-block;
 }
 
 }
@@ -2651,7 +2762,7 @@ h1 {
     vertical-align: baseline;
 }
 
-.ffs p.author-list:before, .ffs p.date-list:before, .ffs-proposal p.author-list:before, .ffs-proposal p.date-list:before, .ffs-proposal p.progress-number-goal:before, .ffs-proposal p.date-list.contributor:before {
+.ffs p.author-list:before, .ffs p.date-list:before, .ffs-proposal p.author-list:before, .ffs-proposal p.date-list:before, .ffs-proposal p.progress-number-goal:before, .ffs-proposal p.date-list.contributor:before, .in-progress p.progress-number-goal:before, .complete-proposal p.progress-number-goal:before {
     content: '';
     display: inline-block;
     height: 0.8rem;
@@ -2669,7 +2780,7 @@ h1 {
     background-image: url(/img/calendar.png);
 }
 
-.ffs p.progress-number-goal:before, .ffs-proposal p.progress-number-goal:before {
+.in-progress p.progress-number-goal:before, .ffs-proposal p.progress-number-goal:before, .complete-proposal p.progress-number-goal:before {
     background-image: url(/img/monero-amount.png);
 }
 
@@ -2686,7 +2797,7 @@ h1 {
     vertical-align: middle;
 }
 
-.ffs-proposal p.date-list, .ffs-proposal p.progress-number-goal, .ffs p.date-list {
+.ffs-proposal p.date-list, .ffs-proposal p.progress-number-goal, .ffs p.date-list, .in-progress p.progress-number-goal, .complete-proposal p.progress-number-goal {
     margin-left: 2rem;
 }
 
@@ -2866,7 +2977,7 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 .fund-required p.bar-fund-status, .ffs-fr p.bar-fund-status, .ffs-con p.bar-fund-status {
     text-align: left;
     float: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding-top: 0;
     margin-top: 1rem;
 }
@@ -2899,6 +3010,14 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     vertical-align: middle;
 }
 
+.in-progress p.progress-number-goal, .complete-proposal p.progress-number-goal {
+    font-size: 1.1rem;
+    color: #a1aabb;
+    line-height: 0;
+    display: inline;
+    vertical-align: middle;
+}
+
 .ffs-proposal .btn {
     width: 8rem;
     height: 3rem;
@@ -2921,6 +3040,7 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     -o-transition: background .15s ease, box-shadow .15s ease;
     transition: background .15s ease, box-shadow .15s ease;
     margin: 0 auto;
+    border-radius: 2px;
 }
 
 .ffs-proposal .btn-primary {
@@ -3048,13 +3168,14 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     margin-top: 1.7rem;
     font-family: 'Hind', sans-serif;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .panel-segment h3:first-child {
     margin-top: 0;
 }
 
-.panel-segment p, .panel-segment ul li, .panel-segment ol li {
+.panel-segment p, .panel-segment ul li, .panel-segment ol li, .dongf p {
     padding-top: 1rem;
     font-size: 1.1rem;
     line-height: 1.7;
@@ -3168,7 +3289,7 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     padding-top: 2rem;
 }
 
-.panel-segment p, .panel-segment ul li, .panel-segment ol li {
+.panel-segment p, .panel-segment ul li, .panel-segment ol li, .dongf p {
     font-size: 1rem;
 }
     
@@ -3189,6 +3310,17 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 .panel-segment .gldiscuss {
     padding-top: 1.5rem;
     margin-top: 2rem;
+}
+    
+.fund-required p.author-list, .fund-required p.date-list {
+    font-size: 1rem;
+}
+    
+.complete-proposal p.author-list, .complete-proposal p.date-list, .complete-proposal p.progress-number-goal, .complete-proposal p.date-list, .in-progress p.autor-list, .in-progress p.date-list, .in-progress p.progress-number-goal {
+    display: block;
+    margin-left: 0;
+    padding-top: 0.9rem;
+    font-size: 1rem;
 }
     
 }
@@ -3307,17 +3439,6 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 @media only screen and (max-width: 48rem) {
 
 .in-progress p.author-list {
-    -ms-flex-preferred-size: 35%;
-    flex-basis: 35%;
-    max-width: 35%;
-    font-size: 0.9rem;
-    padding-top: 0;
-}
-
-.in-progress p.date-list {
-    -ms-flex-preferred-size: 20%;
-    flex-basis: 20%;
-    max-width: 20%;
     font-size: 0.9rem;
     padding-top: 0;
 }
@@ -3333,10 +3454,6 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     text-align: start;
 }
 
-.in-progress p.author-list, .in-progress p.date-list {
-    padding-top: 0.3rem;
-}
-
 .in-progress p.bar-work-status, .ffs-cp p.bar-work-status {
     text-align: left;
     float: none;
@@ -3349,7 +3466,7 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 
 @media only screen and (max-width: 30rem) {
 
-.in-progress p.author-list, .in-progress p.date-list {
+.in-progress p.author-list, .in-progress p.date-list, .in-progress p.progress-number-goal, .complete-proposal p.progress-number-goal {
     padding-top: 0.7rem;
 }
 }
@@ -3376,7 +3493,7 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     font-size: 1rem;
 }
 
-.ffs-proposal p.bar-work-status, .ffs-proposal p.bar-work-status, .ffs-proposal p.bar-fund-status {
+.ffs-proposal p.bar-work-status, .ffs-proposal p.bar-work-status, .ffs-proposal p.bar-fund-status, .fund-required p.bar-fund-status, .in-progress p.bar-work-status {
     text-align: left;
     float: none;
     display: block;
@@ -3388,7 +3505,7 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 @media only screen and (max-width: 48rem) {
 
 .ffs-proposal p.author-list, .ffs-proposal p.date-list, .ffs-proposal p.progress-number-goal, .ffs-proposal p.bar-work-status {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .ffs-wip p.date-list, .ffs-wip p.progress-number-goal, .ffs-cp p.date-list, .ffs-cp p.progress-number-goal {
@@ -3399,15 +3516,19 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 
 @media only screen and (max-width: 37rem) {
 
-.ffs-proposal p.author-list, .ffs-proposal p.date-list, .ffs-proposal p.progress-number-goal, .ffs-proposal p.bar-work-status {
-    padding-top: 0.7rem;
+.ffs-proposal p.author-list, .ffs-proposal p.date-list, .ffs-proposal p.progress-number-goal, .fund-required p.author-list, .fund-required p.date-list {
+    padding-top: 0.9rem;
+}
+    
+.ffs-proposal p.bar-fund-status, .ffs-proposal p.bar-work-status {
+    padding-top: 0;
 }
 
 .ffs-wip .progress-bar, .ffs-cp .progress-bar {
     margin-top: 0.5rem;
 }
 
-.ffs-proposal p.author-list, .ffs-proposal p.date-list, .ffs-proposal p.progress-number-goal, .ffs-proposal p.bar-work-status {
+.ffs-proposal p.author-list, .ffs-proposal p.date-list, .ffs-proposal p.progress-number-goal, .ffs-proposal p.bar-work-status, .fund-required p.author-list, .fund-required p.date-list, .ffs-proposal p.bar-fund-status, .in-progress p.progress-number-goal, .complete-proposal p.progress-number-goal {
     display: block;
     margin-left: 0;
 }
@@ -3636,8 +3757,10 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 
 }
 
-
-
+p.if-issues {
+    font-size: 0.8rem;
+    padding-top: 2rem;
+}
 
 
 

@@ -1,38 +1,22 @@
 <footer class="container-fluid">
             <div class="container">
-                <div class="row around-xs footer-wrapper">
-                  {% for item in site.data.lang[site.lang].footer-1 %} 
-                     <div class="col-sm-3 col-xs-6">
-                     <h3>{{item.title}}</h3>
-                         <ul class="list-unstyled">
-                            {% for entry in item.subfolderitems %}
-                             {% if entry.url contains 'https://' %}
-                              <li><a class="white" href="{{ entry.url }}">{{ entry.name }}</a></li>
-                              {%elsif entry.url contains 'irc'%}
-                              <li><a class="white" href="{{ entry.url }}">{{ entry.name }}</a></li>
-                              {%else%}
-                                <li><a class="white" href="{{site.baseurl}}/{{ entry.url }}">{{ entry.name }}</a></li>
-                              {%endif%}
-                            {% endfor %}
-                         </ul>
+                <div class="row center-xs footer-wrapper">
+                     <div class="col-md-8 col-sm-10 col-xs-12">
+                        <h3>Donate to the Monero Project</h3>
+                        <p>By donating to the following Monero address (General Fund), you are supporting the Monero Project. If you wish to donate to a specific proposal, please see <a href="/funding-required/index.html" class="white gf">Funding Required</a>.</p>  
+                        <p><a href="monero:44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A" class="qr"><img src="/img/donate-monero.png" /></a></p>
+                        <p class="gf-address">44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A</p>
                      </div>
-                 {% endfor %}
-                <div class="row center-xs">
-                    <div class="social-icons">
-                    </div>
+                </div>
+            </div>
+            <div class="row center-xs">
                     <div class="footer-links">
                         <ul class="list-unstyled list-inline">
-                           {% for item in site.data.lang[site.lang].footer-2 %}
-                            {% if item.url contains 'https://' %}
-                             <li><a href="{{item.url}}" class="white footer-link">{{item.name}}</a></li>
-                            {%else%}
-                             <li><a href="{{site.baseurl}}/{{item.url}}" class="white footer-link">{{item.name}}</a></li>
-                           {%endif%}
-                           {% endfor %}
+                             <li><a href="https://repo.getmonero.org/monero-project/ccs-front" class="white footer-link">CCS Front End Repo</a></li>
+                             <li><a href="https://repo.getmonero.org/monero-project/ccs-back" class="white footer-link">CCS Backend Repo</a></li>
+                             <li><a href="https://repo.getmonero.org/monero-project/ccs-proposals" class="white footer-link">CCS Proposals Repo</a></li>
                         </ul>
                     </div>
-                </div>
-                </div>
             </div>
 </footer>
 <!-- Matomo -->
