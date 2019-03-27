@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is the CCS and what are its rules and expectations?
+title: What is the CCS, and what are its rules and expectations?
 ---
 
 ## Introduction
@@ -11,16 +11,16 @@ The Monero Project, which is itself a decentralized project without formalized l
 
 There are many different types of proposals, all with their own goals in mind. In the past, we have seen things from coding new software, developing third party resources, travel reimbursement for conference presenters, and hiring skilled individuals for full-time or part-time work.
 
-The CCS is a way for the community to propose ideas, request money, and utilize the services of the Core Team as an escrow. 
+The CCS is a way for the community to propose ideas and request money, while utilizing the services of the Core Team as an escrow. 
 
 ## CCS Proposal Standard Flow
 
 The standard CCS workflow is as follows:
 
 1. An individual or team (henceforth 'proposer') has an idea to improve the Monero ecosystem that requires funds.
-2. The proposer types up a CCS proposal, understanding the rules and expectation presented in the following section, and makes a Merge Request (MR) to the CCS Proposals repository on Monero's Gitlab instance. All steps to submit this Merge Request can be found [here](/how-to-ccs/).
+2. The proposer creates a CCS proposal, understanding the rules and expectations presented in the following section, and makes a Merge Request (MR) to the CCS Proposals repository on Monero's Gitlab instance. All steps to submit this Merge Request can be found [here](/how-to-ccs/).
 3. The community discusses the pros and cons of the proposal, and offers feedback and critique.
-4. The proposer changes the proposal (if necessary) utilizing the feedback and critique of the community.
+4. The proposer changes the proposal (if necessary), utilizing the feedback and critique of the community.
 5. Repeat steps 3 and 4 as needed.
 6. After the Core Team has determined that the community has reached loose consensus, the MR is merged, and funding begins.
 7. Once fully funded (not guaranteed), the proposal is moved to Work in Progress, where the team begins on the work, if they haven't already.
@@ -36,7 +36,8 @@ The CCS is intentionally left as informal as possible. This allows for flexibili
 1. The CCS is escrowed by the Core Team. When you make a donation, you are releasing funds to them to disperse when they deem the community agrees that a milestone is complete. They do not do the work to verify donors, and the final decision for all disputes falls with them, although they do their best to follow community sentiment.
 2. In the event that a proposal is overfunded, unable to be completed, or otherwise put in a state where donated money will not be dispersed to the intended recipient, the default is that the remaining XMR will be put in the Monero General Fund. There are some exceptions, but they are rare, and these decisions rest with the Core Team.
 3. Refunds are extraordinarily rare. Donate accordingly.
-4. If the proposer disappears, no problem, someone else can pick up from their last milestone 
+4. If the proposer disappears, no problem, someone else can pick up from their last milestone.
+5. Milestone and payout structures vary per proposal based on the proposers wishes (meaning some will require more trust of the proposer if the fund release schedule is immediate or accelerated), it is up to the donor to do their due diligience in whether or not they support the proposal in its entirety.
 
 ### For Proposers
 

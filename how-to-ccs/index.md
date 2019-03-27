@@ -3,6 +3,8 @@ layout: post
 title: How to submit a CCS proposal.
 ---
 
+#### Note: Read the [What is the CCS and What Are Its Rules and Expectations](/what-is-ccs) page before continuing!
+
 The CCS utilizes git, and Monero's Gitlab instance for proposal tracking. A quickstart guide is provided at the top for those already well-versed in git, and step-by-step instructions (with pictures) are provided afterward for those who need help getting through the process. An example proposal is provided at the bottom of this document for referential purposes.
 
 ## Table of Contents
@@ -42,7 +44,7 @@ payouts:
 ```
 
 5. Underneath the front matter, write the rest of your proposal. Be sure to include what the proposal is about, who will be completing it, why it is important for the community, the milestones and projected timeline, and an expiration date for your proposal.
-6. Save, commit, and make a Merge Request to the repo. Your MR title must be descriptive and relevant to your proposal.
+6. Save, commit, and make a Merge Request to the repo. Your MR title must be descriptive and relevant to your proposal. The MR description should be copy/pasted from the proposal contents for easy viewing (front matter excluded).
 7. You're done. Go start letting people know about your proposal.
 
 ## Step-by-step Instructions
