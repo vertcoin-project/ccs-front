@@ -2361,6 +2361,12 @@ footer a.white:hover, a.white:focus {
     -webkit-box-shadow: 0 0 10px rgba(28,30,34,.6);
     box-shadow: 0 0 10px rgba(28,30,34,.6);
     border-radius: 2px;
+    -webkit-touch-callout: all; /* iOS Safari */
+    -webkit-user-select: all; /* Safari */
+    -khtml-user-select: all; /* Konqueror HTML */
+    -moz-user-select: all; /* Firefox */
+    -ms-user-select: all; /* Internet Explorer/Edge */
+    user-select: all; /* Chrome and Opera */
 }
 
 .footer-wrapper .qr {
@@ -2788,7 +2794,7 @@ h1 {
     background-image: url(/img/contributors.png);
 }
 
-.ffs p.author-list, .ffs p.date-list, .ffs-proposal p.author-list, .ffs-proposal p.date-list {
+.ffs p.author-list, .ffs p.date-list, .ffs-proposal p.author-list, .ffs-proposal p.date-list, .in-progress p.progress-number-goal, .complete-proposal p.progress-number-goal {
     padding-top: 0;
     font-size: 1.1rem;
     color: #9ca1ac;
@@ -2926,10 +2932,10 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 .fund-required p.bar-fund-status, .ffs-proposal p.bar-fund-status, .in-progress p.bar-work-status, .ffs-proposal p.bar-work-status, .ffs-con p.bar-fund-status {
     padding-top: 0;
     font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Hind', sans-serif;
     text-align: right;
     float: right;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .fund-required .progress-bar {
@@ -3371,6 +3377,12 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-weight: 700;
+    -webkit-touch-callout: all; /* iOS Safari */
+    -webkit-user-select: all; /* Safari */
+    -khtml-user-select: all; /* Konqueror HTML */
+    -moz-user-select: all; /* Firefox */
+    -ms-user-select: all; /* Internet Explorer/Edge */
+    user-select: all; /* Chrome and Opera */
 }
 
 .ffs-con .qr, .ffs-con .qr:hover, .ffs-con .qr:focus, .ffs-con .qr:active {
@@ -3421,7 +3433,6 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 .in-progress p.bar-work-status {
     padding-top: 0;
     font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
 }
 
 @media only screen and (max-width: 62rem) {
@@ -3486,6 +3497,17 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     clear: both;
 }
 
+@media only screen and (max-width: 75rem) {
+    
+.in-progress p.bar-work-status {
+    text-align: left;
+    float: none;
+    display: block;
+    margin-top: 1rem;
+}    
+    
+}
+
 
 @media only screen and (max-width: 62rem) {
 
@@ -3493,7 +3515,7 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     font-size: 1rem;
 }
 
-.ffs-proposal p.bar-work-status, .ffs-proposal p.bar-work-status, .ffs-proposal p.bar-fund-status, .fund-required p.bar-fund-status, .in-progress p.bar-work-status {
+.ffs-proposal p.bar-work-status, .ffs-proposal p.bar-work-status, .ffs-proposal p.bar-fund-status, .fund-required p.bar-fund-status {
     text-align: left;
     float: none;
     display: block;

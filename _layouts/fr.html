@@ -96,10 +96,8 @@ layout: base
                                                 <span class="{{milestones.status}} ms-{{milestones.status}}"></span>
                                                 <h3>{{milestones.name}}</h3>
                                                 <p><span class="bold">To be paid:</span> {{milestones.funds}}</p>
-                                                {% if milestones.done != nil %}
                                                 <p><span class="bold">Completion date:</span> {{milestones.done}}</p>
                                            </div>
-                                            {%endif%}
                                         {%endfor%}
                                         {%else%}
                                             <div class="panel-segment">
