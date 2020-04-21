@@ -13,36 +13,6 @@ layout: base
       </div>
    </div>
 </div>
-      
-       <!-- FULL WIDTH BLOCK -->                   
-                   <!--div class="row center-xs">
-                       <div class="tab col-xs-12">
-                            <input id="tab-one" type="checkbox" name="tabs" class="accordion">
-                            <label for="tab-one" class="accordion">Contribute</label>
-                            <div class="tab-content">
-                                <div class="row start-xs">
-                                    <div class="col-xs-12">
-                                        <p>In order to contribute to the cause of <strong>{{page.title}}</strong> all you have to do is the following:</p>
-                                        <p>Have a valid Monero address. If you don't have one, you can read on getting started!</p>
-                                        <p>Send the amount of XMR that you wish to contribute to the address: <strong>{{page.address}}</strong></p>
-                                        <p>Make sure that you enter a payment ID of <strong>{{page.paymentid}}</strong> in order for us to be able to assign your contribution to this specific project!</p>
-					<p><div id="qrcode"></div></p>
-					<script src="{{ base.url | prepend: site.url }}/js/qrcode.min.js"></script>
-					<script type="text/javascript">
-						var qr_description = encodeURIComponent("{{page.title}}");
-						new QRCode(document.getElementById("qrcode"), {
-							text: "monero:{{page.address}}?tx_payment_id={{page.paymentid}}&tx_description="+qr_description,
-						        width: 150,
-							    height: 150,
-						        colorDark : "#000000",
-						        colorLight : "#ffffff",
-						        correctLevel : QRCode.CorrectLevel.M
-						});
-					</script>
-                                    </div>
-                                </div>
-                            </div--!>
-    <!-- END FULL WIDTH BLOCK -->
     
                 <section class="container full">
                 <div class="info-block">
@@ -60,7 +30,22 @@ layout: base
                             <div class="progress-bar">
                                 <span class="fund-progress" style="width: {{proposal.percentage}}%"></span>
                             </div>
-                           <p><a href="{{proposal.donate-url}}" class="btn btn-primary">Contribute</a></p>
+                           <div class="contribute-dropdown">
+                                <div class="tab">
+                                    <input id="tab-con" type="checkbox" name="tabs" class="accordion">
+                                    <label for="tab-con" class="accordion btn">Contribute</label>
+                                    <div class="tab-content">
+                                        <div class="instructions">
+                                            <p>1. Choose the amount of XMR you wish to contribute to this proposal.</p>
+                                            <p>2. Scan the QR code or tap to open in your Monero wallet app</p>
+                                            <p><a href="monero:{{ proposal.donate-address }}" class="qr"><img src="{{ proposal.donate-qr-code }}"></a></p>
+                                            <p>or copy the following XMR address:</p>
+                                            <p class="string">{{ proposal.donate-address }}</p>
+                                            <p>3. Send! Thank you! You are amazing!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                            
                         </div>
                     </div>
