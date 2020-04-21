@@ -3402,6 +3402,101 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     max-width: 15rem;
 }
 
+/*Contribute Dropdown*/
+
+.tab {
+    position: relative;
+    width: 100%;
+    color: #4c4c4c;
+    overflow: hidden;
+}
+
+label.accordion {
+    position: relative;
+    display: block;
+    padding: 1.3rem 2rem 1.3rem 0;
+    font-weight: bold;
+    line-height: 1.7;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.tab-content {
+    overflow:hidden;
+    height:0;
+    padding: 0;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    padding: 0 1rem;
+}
+input.accordion:checked ~ .tab-content {
+    height:auto;
+    padding: 1rem;
+}
+
+input.accordion {
+    position: absolute;
+    display: none;
+    z-index: -1;
+}
+
+.contribute-dropdown {
+    text-align: center;
+}
+
+.contribute-dropdown .btn {
+    margin: 1rem auto;
+    -moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,.07), 0 1px 5px 0 rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.07), 0 1px 5px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.07), 0 1px 5px 0 rgba(0,0,0,.1);
+    background-color: #b74848;
+    color: #ffffff;
+}
+
+input.accordion:checked ~ .btn {
+    background-color: #d26e2b;
+}
+
+.instructions a.qr {
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    -moz-box-shadow: 0 0 5px rgba(50,50,93,.4);
+    -webkit-box-shadow: 0 0 5px rgba(50,50,93,.4);
+    box-shadow: 0 0 5px rgba(50,50,93,.4);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.instructions .qr img {
+    border-radius: 10px;
+    vertical-align: middle;
+    max-width: 15rem;
+}
+
+.instructions p.string {
+    background-color: #edeff2;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    -webkit-touch-callout: all;
+    -webkit-user-select: all;
+    -khtml-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+    border-radius: 2px;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    -moz-box-shadow: 0 0 5px rgba(50,50,93,.4);
+    -webkit-box-shadow: 0 0 5px rgba(50,50,93,.4);
+    box-shadow: 0 0 5px rgba(50,50,93,.4);
+}
+
 @media (max-width: 600px) {
 
 .ffs-con .panel {
@@ -3783,8 +3878,5 @@ p.if-issues {
     font-size: 0.8rem;
     padding-top: 2rem;
 }
-
-
-
 
 
