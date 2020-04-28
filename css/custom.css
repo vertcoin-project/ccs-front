@@ -3156,9 +3156,13 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
     margin-bottom: 1rem;
 }
 
-.panel-segment h1 {
+.panel-segment h1:first-child {
     margin-top: 0;
-    margin-bottom: 2.5rem;
+}
+
+.panel-segment h1 {
+    margin-top: 1rem;
+    margin-bottom: 0;
     line-height: 1.2;
     font-size: 2rem;
 }
