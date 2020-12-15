@@ -48,6 +48,10 @@ The CCS is intentionally left as informal as possible. This allows for flexibili
 5. You may NOT under any circumstances include a donation address directly in your proposal. This circumvents the CCS, and can lead to scams.
 6. Your work on the project can begin before the proposal is fully funded, and milestones may (at times) be paid out before the proposal is fully funded.
 
+### For Translation Proposals
+
+Due to prior events, all authors of translation proposals are required to have volunteer translation work WITHIN the Monero Project in order for their proposals to be eligible. It is always recommended to do the required volunteer work before opening your translation proposal rather than do both simultaneously as your proposal may be rejected before you finish the required volunteer work.
+
 ### How to submit a proposal
 
 [Please read this page for step-by-step instructions on how to submit a proposal.](/how-to-ccs/)
