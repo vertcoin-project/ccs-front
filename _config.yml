@@ -1,9 +1,9 @@
-email: dev@getmonero.org
-name: Monero
-description: Monero is a digital currency that is secure, private, and untraceable.
-keywords: "monero, xmr, bitmonero, cryptocurrency"
+email: vertion@protonmail.com
+name: Vertcoin
+description: Vertcoin is a digital currency.
+keywords: "vertcoin, vtc, cryptocurrency"
 baseurl: ""
-url: "https://getmonero.org"
+url: "https://vertcoin.org"
 
 markdown: kramdown
 
