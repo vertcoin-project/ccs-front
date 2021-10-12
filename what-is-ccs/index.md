@@ -18,7 +18,7 @@ The CCS is a way for the community to propose ideas and request money, while uti
 The standard CCS workflow is as follows:
 
 1. An individual or team (henceforth 'proposer') has an idea to improve the Vertcoin ecosystem that requires funds.
-2. The proposer creates a CCS proposal, understanding the rules and expectations presented in the following section, and makes a Pull Request (PR) to the CCS Proposals repository in Vertcoin-Project. All steps to submit this Pull Request can be found [here](/how-to-ccs/).
+2. The proposer creates a CCS proposal, understanding the rules and expectations presented in the following section, and makes a Pull Request (PR) to the [CCS Proposals repository](https://github.com/vertiond/ccs-proposals). All steps to submit this Pull Request can be found [here](/how-to-ccs/).
 3. The community discusses the pros and cons of the proposal, and offers feedback and critique.
 4. The proposer changes the proposal (if necessary), utilizing the feedback and critique of the community.
 5. Repeat steps 3 and 4 as needed.
@@ -41,12 +41,13 @@ The CCS is intentionally left as informal as possible. This allows for flexibili
 
 ### For Proposers
 
-1. There is no guarantee that your project will get past the Ideas stage, and if it does, there is no guarantee that it will be funded.
-2. You have to drum up support for your proposal during the first two stages. Do not expect others (especially the Vertcoin CCS Team or other trusted members of the community) to do it for you. Others may share and support if they are excited about your project, but ultimately it is nobody's responsibility but your own.
-3. It is expected that you provide updates on the progress of your proposal to the community. For every milestone completed there should be a written report put into the GitHub comments of your proposal announcing its completion and the work done, but depending on the timeline of your project, it may be wise to update the community more frequently, such as at the biweekly community or dev meetings.
-4. All work must be licensed permissively at all stages of the proposal. There is no time where your work can be licensed under a restrictive license (even as you're working on it). Your proposal will be terminated if this is not remedied.
-5. You may NOT under any circumstances include a donation address directly in your proposal. This circumvents the CCS, and can lead to scams.
-6. Your work on the project can begin before the proposal is fully funded, and milestones may (at times) be paid out before the proposal is fully funded.
+1. **Proposals involving funding for exchange listings are not allowed.**
+2. There is no guarantee that your project will get past the Ideas stage, and if it does, there is no guarantee that it will be funded.
+3. You have to drum up support for your proposal during the first two stages. Do not expect others (especially the Vertcoin CCS Team or other trusted members of the community) to do it for you. Others may share and support if they are excited about your project, but ultimately it is nobody's responsibility but your own.
+4. It is expected that you provide updates on the progress of your proposal to the community. For every milestone completed there should be a written report put into the GitHub comments of your proposal announcing its completion and the work done, but depending on the timeline of your project, it may be wise to update the community more frequently, such as at the biweekly community or dev meetings.
+5. All work must be licensed permissively at all stages of the proposal. There is no time where your work can be licensed under a restrictive license (even as you're working on it). Your proposal will be terminated if this is not remedied.
+6. You may NOT under any circumstances include a donation address directly in your proposal. This circumvents the CCS, and can lead to scams.
+7. Your work on the project can begin before the proposal is fully funded, and milestones may (at times) be paid out before the proposal is fully funded.
 
 ### For Translation Proposals
 

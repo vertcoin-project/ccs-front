@@ -14,7 +14,7 @@ The CCS utilizes git, and Github for proposal tracking. A quickstart guide is pr
 - [Editing or Amending a Proposal](#editing-or-amending-a-proposal)
 
 ## Quickstart Guide
-1. Register for an account on [Github](https://github.com) and fork the [CCS Proposals repository](https://github.com/vertcoin-project/ccs-proposals)
+1. Register for an account on [Github](https://github.com) and fork the [CCS Proposals repository](https://github.com/vertiond/ccs-proposals)
 2. Make a new branch, named similarly to your proposal
 3. Add a new `.md` document, and title it similarly to the title of your proposal with your name or handle in the file name.
 4. Use the template provided below for the front matter, and place it at the top of your proposal. You are responsible for adding the appropriate amount of milestones, with an equal number of payouts below the milestones. FORMATTING MUST BE PRESERVED, OR THE PROPOSAL WILL NOT WORK! Do NOT fill in the `done:` variable under `milestones:`, and do NOT fill in anything under `payouts:` besides making sure the number matches the number of milestones.
@@ -53,11 +53,11 @@ payouts:
 
 **You will only have to do this step once! If you make future proposals, you can skip to Step 2.**
 
-First things first, you're going to need an account on [Github](https://github.com). Register for an account (use a strong password), and then navigate to the [CCS Proposals repo](https://github.com/vertcoin-project/ccs-proposals). Click the "Fork" button.
+First things first, you're going to need an account on [Github](https://github.com). Register for an account (use a strong password), and then navigate to the [CCS Proposals repo](https://github.com/vertiond/ccs-proposals). Click the "Fork" button.
 
 ![Click this fork button](/img/how-to/fork.png)
 
-You should see the "Forking vertcoin-project/ccs-proposals" message.
+You should see the "Forking vertiond/ccs-proposals" message.
 
 ![Fork success](/img/how-to/fork-success.png)
 
