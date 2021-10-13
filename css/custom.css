@@ -972,6 +972,38 @@
   }
 }
 
+/******************Added for Vertcoin**********************/
+.img-valign {
+  vertical-align: middle;
+  margin-bottom: 0.75em;
+}
+
+.textlogo {
+  font-size: 24px;
+}
+
+.imgcenter {
+    max-width:100%;
+    text-align: center!important;
+    padding: 0px 24px;
+}
+
+.orange-text {
+    color:#F4B400;
+}
+
+.red-text {
+    color:#DB4437;
+}
+
+.blue-text {
+    color:#4285F4;
+}
+
+.green-text {
+    color:#0F9D58;
+}
+
 /******************GENERAL**********************/
 
 body {
@@ -1800,7 +1832,7 @@ img.monero-logo {
 }
 
 p.site-name {
-    padding: 0;
+    padding: 10px;
 }
 
 p.site-name a {
@@ -2552,19 +2584,19 @@ footer a.white {
 }
 
 .ffs-main .half:nth-of-type(1) a {
-    border-top: 6px solid #e8c24f;
+    border-top: 6px solid #F4B400;
 }
 
 .ffs-main .half:nth-of-type(2) a {
-    border-top: 6px solid #f28080;
+    border-top: 6px solid #DB4437;
 }
 
 .ffs-main .half:nth-of-type(3) a {
-    border-top: 6px solid #498fd5;
+    border-top: 6px solid #4285F4;
 }
 
 .ffs-main .half:nth-of-type(4) a {
-    border-top: 6px solid #70af71;
+    border-top: 6px solid #0F9D58;
 }
 
 .ffs-main .col-sm-8 {
@@ -2677,11 +2709,11 @@ h1 {
 }
 
 .ffs-main .half:nth-of-type(1) a.ffs-cat {
-    border-top: 6px solid #e8c24f;
+    border-top: 6px solid #F4B400;
 }
 
 .ffs-main .half:nth-of-type(2) a.ffs-cat {
-    border-top: 6px solid #f28080;
+    border-top: 6px solid #DB4437;
 }
 
 .ffs-main .half:nth-of-type(3) a.ffs-cat {
@@ -2689,7 +2721,7 @@ h1 {
 }
 
 .ffs-main .half:nth-of-type(4) a.ffs-cat {
-    border-top: 6px solid #70af71;
+    border-top: 6px solid #0F9D58;
 }
 
 }
@@ -2730,7 +2762,7 @@ h1 {
 }
 
 .ffs .ideas a.ffs-idea {
-    border-top: 6px solid #e8c24f;
+    border-top: 6px solid #F4B400;
 }
 
 .ffs a.ffs-idea {
@@ -2787,7 +2819,7 @@ h1 {
 }
 
 .in-progress p.progress-number-goal:before, .ffs-proposal p.progress-number-goal:before, .complete-proposal p.progress-number-goal:before {
-    background-image: url(/img/monero-amount.png);
+    background-image: url(/img/vertcoin-amount.png);
 }
 
 .ffs p.date-list.contributor:before, .ffs-proposal p.date-list.contributor:before {
@@ -2913,7 +2945,7 @@ p.author-list, p.date-list, p.progress-number-goal, p.bar-work-status {
 /* FFS FUNDING REQUIRED LIST */
 
 .ffs .fund-required a.ffs-idea {
-    border-top: 6px solid #f28080;
+    border-top: 6px solid #DB4437;
 }
 
 .ffs .fund-required p.list-button a {
@@ -3665,7 +3697,7 @@ input.accordion:checked ~ .btn {
 /* FFS COMPLETED PROPOSAL LIST */
 
 .ffs .complete-proposal a.ffs-idea {
-    border-top: 6px solid #70af71;
+    border-top: 6px solid #0F9D58;
 }
 
 /* FFS COMPLETED PROPOSAL SINGLE */
@@ -3820,7 +3852,7 @@ input.accordion:checked ~ .btn {
 }
 
 .progress-bar span.work-progress {
-    background-color: #498fd5;
+    background-color: #4285F4;
 }
 
 @media only screen and (max-width: 75rem) {
