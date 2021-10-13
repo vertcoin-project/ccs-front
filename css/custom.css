@@ -972,7 +972,16 @@
   }
 }
 
-/******************GENERAL**********************/
+/******************Added for Vertcoin**********************/
+.img-valign {
+  vertical-align: middle;
+  margin-bottom: 0.75em;
+}
+
+.textlogo {
+  font-size: 24px;
+}
+
 .imgcenter {
     max-width:100%;
     text-align: center!important;
@@ -994,6 +1003,8 @@
 .green-text {
     color:#0F9D58;
 }
+
+/******************GENERAL**********************/
 
 body {
     margin: 0;
@@ -1821,7 +1832,7 @@ img.monero-logo {
 }
 
 p.site-name {
-    padding: 0;
+    padding: 10px;
 }
 
 p.site-name a {
