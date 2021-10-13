@@ -2819,7 +2819,7 @@ h1 {
 }
 
 .in-progress p.progress-number-goal:before, .ffs-proposal p.progress-number-goal:before, .complete-proposal p.progress-number-goal:before {
-    background-image: url(/img/monero-amount.png);
+    background-image: url(/img/vertcoin-amount.png);
 }
 
 .ffs p.date-list.contributor:before, .ffs-proposal p.date-list.contributor:before {
