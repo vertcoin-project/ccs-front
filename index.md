@@ -2,9 +2,6 @@
 layout: customnt
 title: Community Crowdfunding System (CCS)
 ---
-<div class ="imgcenter">  
-                <img src="/img/vertcoin-crowdfunding-baner.png">  
-</div>  
 <div class="ffs-main">
         <div class="container description" >
                <h1>{{page.title}}</h1>
