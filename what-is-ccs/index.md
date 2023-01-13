@@ -18,7 +18,7 @@ The CCS is a way for the community to propose ideas and request money, while uti
 The standard CCS workflow is as follows:
 
 1. An individual or team (henceforth 'proposer') has an idea to improve the Vertcoin ecosystem that requires funds.
-2. The proposer creates a CCS proposal, understanding the rules and expectations presented in the following section, and makes a Pull Request (PR) to the [CCS Proposals repository](https://github.com/vertiond/ccs-proposals). All steps to submit this Pull Request can be found [here](/how-to-ccs/).
+2. The proposer creates a CCS proposal, understanding the rules and expectations presented in the following section, and makes a Pull Request (PR) to the [CCS Proposals repository](https://github.com/vertcoin-project/ccs-proposals). All steps to submit this Pull Request can be found [here](/how-to-ccs/).
 3. The community discusses the pros and cons of the proposal, and offers feedback and critique.
 4. The proposer changes the proposal (if necessary), utilizing the feedback and critique of the community.
 5. Repeat steps 3 and 4 as needed.
